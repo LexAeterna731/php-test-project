@@ -1,0 +1,16 @@
+{
+    "name": "lexaeterna/php-test-project",
+    "authors": [
+        {
+            "name": "LexAeterna731",
+            "email": "Delirium731@yandex.ru"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.11",
+        "slim/psr7": "^1.6",
+        "slim/http": "^1.3",
+        "slim/php-view": "^3.2",
+        "php-di/php-di": "^7.0"
+    }
+}
