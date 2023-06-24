@@ -1,0 +1,26 @@
+<?php if (isset($flash['success'])): ?>
+    <div>
+        <?php foreach ($flash['success'] as $message): ?>
+            <?= htmlspecialchars($message) ?>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>
+<form action="/users" method="get">
+    <input type="search" name="term" value="<?= htmlspecialchars($term) ?>" />
+    <input type="submit" value="Search">
+</form>
+<br>
+<ul>
+    <?php foreach ($users as $user): ?>
+        <li>
+            <?= htmlspecialchars($user['nickname']) ?> : <?= htmlspecialchars($user['id']) ?>
+        </li>
+    <?php endforeach ?>
+</ul>
+
+<?php if ($currentUser): ?>
+    <form action="/users/session" method="post">
+        <input type="hidden" name="_METHOD" value="DELETE">
+        <input type="submit" value="Logout">
+    </form>
+<?php endif ?>

@@ -1,0 +1,18 @@
+<?php if (isset($flash['errors'])): ?>
+    <div>
+        <?php foreach ($flash['errors'] as $message): ?>
+            <?= htmlspecialchars($message) ?>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>
+<?php if ($currentUser): ?>
+    <form action="/users/session" method="post">
+        <input type="hidden" name="_METHOD" value="DELETE">
+        <input type="submit" value="Logout">
+    </form>
+<?php else: ?>
+    <form action="/users/session" method="post">
+        <input type="text" name="user[email]">
+        <input type="submit" value="Login">        
+    </form>
+<?php endif ?>

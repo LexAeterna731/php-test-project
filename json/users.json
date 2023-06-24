@@ -1,0 +1,37 @@
+{
+    "0": {
+        "id": "6492105cb4e64",
+        "nickname": "test",
+        "email": "test@mail.ru"
+    },
+    "2": {
+        "id": "649210fb030fb",
+        "nickname": "test",
+        "email": "test@mail.ru"
+    },
+    "3": {
+        "id": "649215e206f23",
+        "nickname": "test23",
+        "email": "test@mail.ru"
+    },
+    "4": {
+        "id": "649315aaa5dc5",
+        "nickname": "testr",
+        "email": "test@mail.ru"
+    },
+    "5": {
+        "id": "6493162cbef4c",
+        "nickname": "test",
+        "email": "test@mail.ru"
+    },
+    "6": {
+        "id": "649348ace8224",
+        "nickname": "test2ewe2",
+        "email": "test@mail.rue"
+    },
+    "7": {
+        "id": "6494a5cbceb31",
+        "nickname": "test2www",
+        "email": "test@mail.ruee"
+    }
+}

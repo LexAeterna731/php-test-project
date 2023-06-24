@@ -1,0 +1,6 @@
+<p>id = <?= htmlspecialchars($id) ?></p>
+<p>nickname = <?= htmlspecialchars($nickname) ?></p>
+<form action="/users/<?= $id ?>" method="post">
+    <input type="hidden" name="_METHOD" value="DELETE">
+    <input type="submit" value="Delete">
+</form>

@@ -1,0 +1,32 @@
+<?php if (isset($flash['success'])): ?>
+    <div>
+        <?php foreach ($flash['success'] as $message): ?>
+            <?= htmlspecialchars($message) ?>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>
+<form action="/users" method="post">
+    <div>
+        <label>
+            Nickname
+            <input type="text" name="user[nickname]" value="<?= htmlspecialchars($user['nickname']) ?>">
+        </label>
+        <?php if (isset($errors['nickname'])): ?>
+            <div>
+                <?= $errors['nickname'] ?>
+            </div>
+        <?php endif ?>
+    </div>
+    <div>
+        <label>
+            Email
+            <input type="text" name="user[email]" value="<?= htmlspecialchars($user['email']) ?>">
+        </label>
+        <?php if (isset($errors['email'])): ?>
+            <div>
+                <?= $errors['email'] ?>
+            </div>
+        <?php endif ?>
+    </div>
+    <input type="submit" value="Add">
+</form>
